@@ -1,0 +1,45 @@
+1. Import the required library 
+
+Import the PyPDF2 and random 
+
+PyPDF2 is used to open the pdf file in the VS code and used to do further operations 
+
+Random is used to genarate random choices for the MCQ based on the questions from the chapters 
+
+
+2. Reading the PDF files
+
+Need to read more text from pdf from different chapter so created the function and code is buit inside it and its return the result
+
+open the pdf file in rb mode that it read binay files and then file is readed by pdfreader with the file name 
+
+text empty string is created to return the extracted text as the result 
+
+by using for loop its extracted text from pages and it retun in the text variable 
+
+
+3. Getting the MCQ questions 
+
+Need to extract MCQ questions from different chapter so created the function and code is buit inside it and its return the result
+
+split the context into sentences by using strip and split by dot 
+
+then for generating questions and random chocies use for loop to create it and append the choices in the sentences and suffle the choices each time when it intrate it 
+
+
+Printing the choices 
+
+by using for loop its takes the choics and put the ord of character in front of choices and append in the mca_questions list 
+ 
+
+4. Generating the MCQ question chapeter wise 
+
+Give the file path and file name and pass to the text_from_pdf function 
+the pass the context variable into the get_mca_questions and then run the for loop then print the question and chocies 
+
+As the result it shows
+chapter 2 its created 265 question 
+chapter 3 its created 219 question 
+chapter 4 its created 185 question 
+
+
